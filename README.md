@@ -16,3 +16,4 @@ List of projects:
 * **SimpleClassExcercise** - Just simple class declaration
 * **Snail** - Print a snail on the screen.
 * **Snail_curses** - Snail app using Curses library to avoid screen blinking.
+* **PrimeNumbers** - Calculate all prime nombers to given range
