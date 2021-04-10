@@ -12,7 +12,7 @@ class fitness:
         return self.height / 100
 
     def bmi (self):
-        return self.weight_kg() / ( self.height_m() ** 2)
+        return round(self.weight_kg() / ( self.height_m() ** 2), 2)
 
     def rate (self):
         temp = self.bmi()
