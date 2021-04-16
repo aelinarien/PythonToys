@@ -1,3 +1,5 @@
+# http://www.algorytm.edu.pl/algorytmy-maturalne/badanie-czy-liczba-pierwsza.html
+
 def check_prime( prime ):
     _prime = prime
     if _prime < 2:
