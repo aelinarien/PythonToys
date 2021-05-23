@@ -16,8 +16,8 @@ Podpowiedź: najważniejszą częścią problemu jest przekształcenie pomysłu 
 Przetestuj swój kod, korzystając z danych, które dostarczyliśmy.
 """
 
-c0 = int(input ("Podaj liczbe: "))
-krok = 0
+c0 = int(input ("Input number: "))
+step = 0
 
 while c0 != 1:
     if (c0 % 2) == 0:
@@ -25,7 +25,7 @@ while c0 != 1:
     else:
         c0 = 3 * c0 + 1
     print (c0)
-    krok += 1
+    step += 1
     
-print(f"liczba krokow = {krok}")
+print(f"Step count = {step}")
     

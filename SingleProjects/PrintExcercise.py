@@ -1,14 +1,9 @@
 
 try:
-    a = int( input( "Podaj a: " ) ) 
+    a = int( input( "Input a: " ) ) 
+    b = int( input( "Input b: " ) )
 except ValueError: 
-    print ("Podaj liczbę.")
-
-
-try:
-    b = int( input( "Podaj b: " ) )
-except ValueError: 
-    print ("Podaj liczbę.")
+    print ("This is not a number.")
 
 # space formating
 len1 = 4 if len(str(a + b)) < 3 else len(str(a + b))

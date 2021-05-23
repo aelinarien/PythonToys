@@ -24,21 +24,21 @@ rows = -1
 
 while cols < 0 or cols > 205 :
     try:
-        cols = int( input( "Podaj szerokosc (max 205): " ) ) 
+        cols = int( input( "Input width (max 205): " ) ) 
     except ValueError: 
-        print ("Podaj liczbę.")
+        print ("Give number.")
         continue
     if cols > 205: 
-        print ( "Za dużo. Jeszcze raz." )
+        print ( "Too much. Try one more time." )
 
 while rows < 0 or rows > 57 :
     try:
-        rows = int( input( "Podaj wysokosc (max 57): " ) )
+        rows = int( input( "Input height (max 57): " ) )
     except ValueError: 
-        print ("Podaj liczbę.")
+        print ("Give number.")
         continue
     if rows > 57: 
-        print ( "Za dużo. Jeszcze raz." )
+        print ( "Too much. Try one more time." )
 
 
 table = [[" " for x in range(cols)] for y in range(rows)]

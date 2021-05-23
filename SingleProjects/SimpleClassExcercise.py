@@ -4,13 +4,13 @@ class address:
         self.code = code
         self.city = city
     def print(self):
-        return 'Adres: ' + self.street + ', Kod pocztowy: ' + self.code + ', Miasto: ' + self.city 
+        return 'Address: ' + self.street + ', Post code: ' + self.code + ', City: ' + self.city 
 
 
 
-street = input( "Podaj ulice: " ) 
-code = input( "Podaj kod: " ) 
-city = input( "Podaj miastro: " ) 
+street = input( "Input street: " ) 
+code = input( "Input post code: " ) 
+city = input( "Input city: " ) 
 
 c = address( street, code, city )
 

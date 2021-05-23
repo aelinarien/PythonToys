@@ -16,15 +16,15 @@ Przykładowe dane wejściowe: 2
 Oczekiwany wynik: Wysokość piramidy wynosi: 1
 """
 
-blokow = int(input("Wprowadź liczbę bloków: "))
+blocks = int(input("How many blocks do You have: "))
 
 
-wysokosc = 0
+height = 0
 while True:
-    blokow -= ( wysokosc + 1 ) 
-    if blokow < 0:
+    blocks -= ( height + 1 ) 
+    if blocks < 0:
         break
-    wysokosc +=1
+    height +=1
     
     
-print("Wysokość piramidy wynosi:", wysokosc)
+print("Hight of Your pyramid:", height)

@@ -14,7 +14,7 @@ def check_prime( prime ):
 try:
     prime = ( int( input( "Give range number for prime numbers: " ) ) )
 except ValueError:
-    print ("Podaj liczbę.")
+    print ("This is not a number.")
     quit()
 
 i = 1;

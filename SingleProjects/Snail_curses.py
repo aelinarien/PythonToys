@@ -90,23 +90,23 @@ def main(stdscr):
     
     while cols < 0 or cols > max_cols :
         try:
-            stdscr.addstr ( "Podaj szerokosc (max " + str(max_cols) + "): ")
+            stdscr.addstr ( "Input width (max " + str(max_cols) + "): ")
             cols = int( stdscr.getstr( ) ) 
         except ValueError: 
-            stdscr.addstr ("Podaj liczbę.")
+            stdscr.addstr ("Not a number.")
             continue
         if cols > max_cols: 
-            stdscr.addstr ( "Za dużo. Jeszcze raz." )
+            stdscr.addstr ( "Too much. One more time." )
 
     while rows < 0 or rows > max_rows :
         try:
-            stdscr.addstr("Podaj wysokosc (max " + str(max_rows) + "): ")
+            stdscr.addstr("Input height (max " + str(max_rows) + "): ")
             rows = int( stdscr.getstr(  ) )
         except ValueError: 
-            stdscr.addstr ("Podaj liczbę.")
+            stdscr.addstr ("Not a number.")
             continue
         if rows > max_rows: 
-            stdscr.addstr ( "Za dużo. Jeszcze raz." )
+            stdscr.addstr ( "Too much. One more time." )
 
     stdscr.clear()
 

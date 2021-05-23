@@ -15,16 +15,16 @@ def display_board(board):
 
 def enter_move(board):
     while True:
-        square = int(input("Podaj numer pola: "))
+        square = int(input("Input field number: "))
         if square < 1 or square > 9:
-            print("Nie ma takiego pola")
+            print("No such field")
             continue
         row = (square - 1) // 3
         col = (square - 3 * row) - 1
         if type (board[row][col]) == int:
             board[row][col] = "O"
             return
-        print("Pole jest już zajęte")
+        print("Field is occupied already")
             
 
 def make_list_of_free_fields(board):
@@ -41,16 +41,16 @@ def victory_for(board, sign):
     
     for x in board:
         if x.count(sign) == 3:
-            print(f"{sign} wygrał.")
+            print(f"{sign} have won!")
             return True
         for y in range(3):
             if x[y] == sign:
                 col[y] += 1
             if col[y] == 3:
-                print(f"{sign} wygrał.")
+                print(f"{sign} have won!.")
                 return True
     if ( board[0][2] == sign and board[2][0] == sign ) or ( board[0][0] == sign and board[2][2] == sign ):
-        print(f"{sign} wygrał.")
+        print(f"{sign} have won!.")
         return True
     return False
 
@@ -76,7 +76,7 @@ while True:
     if victory_for(board, "X"):
         break
     if make_list_of_free_fields(board) == 0:
-        print("Remis!")
+        print("Tie!")
         break
     
 display_board(board)

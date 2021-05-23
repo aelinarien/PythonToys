@@ -1,3 +1,4 @@
+# https://www.reddit.com/r/learnpython/comments/5uflxz/how_to_stop_the_flickering_in_this_code/
 from time import sleep
 from os import system, name
 from datetime import datetime

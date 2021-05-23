@@ -1,9 +1,9 @@
 import math
 
 
-width = int(input("Podaj wielkość strzałki (>8): "))
+width = int(input("Input arrow size (>8): "))
 if width < 8:
-    print("Wroc do szkoly", width, "jest mniejsze od 8 :(")
+    print("Go back to school", width, "is smaller than 8 :(")
     quit()
 halfWidth = math.floor(width/2)
 temp = ""
